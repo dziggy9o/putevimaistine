@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/putevimaistine.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 import PutevimaIstine from './putevimaistine';
 import * as serviceWorker from './serviceWorker';

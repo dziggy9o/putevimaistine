@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 class InfoTure extends Component{
     render(){
         return(
-            <i className="tureinfo"><Link to={this.props.info}><FontAwesomeIcon icon={faInfo} /></Link></i>
+            <Link to={this.props.info}><i className="tureinfo"><FontAwesomeIcon icon={faInfo} /></i></Link>
         )
     }
 }

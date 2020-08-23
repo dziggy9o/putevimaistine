@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faYoutube, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 const socialLinkovi = [
     {adresa: 'https://www.facebook.com/putevimasvetogsave/', naziv: 'Facebook', ikona: <FontAwesomeIcon icon={faFacebook} />},
-    {adresa: 'https://www.instagram.com/putevimasvetogsave/', naziv: 'Instagram', ikona: <FontAwesomeIcon icon={faInstagram} />}
+    {adresa: 'https://www.instagram.com/putevimasvetogsave/', naziv: 'Instagram', ikona: <FontAwesomeIcon icon={faInstagram} />},
+    {adresa: 'https://www.youtube.com/channel/UCs6Fvb57ylEHbqc3DLDxmGA', naziv: 'Youtube', ikona: <FontAwesomeIcon icon={faYoutube} />}
 ]
 
 class Footer extends Component{

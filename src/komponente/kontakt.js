@@ -6,7 +6,7 @@ import * as emailjs from 'emailjs-com';
 
 const kontaktPodaci = [
     {ime: 'Email', tekst: <a href="mailto:kancelarija@putevimaistine.rs">kancelarija@putevimaistine.rs</a>, ikona: <FontAwesomeIcon icon={faEnvelope} />},
-    {ime: 'Telefon', tekst: <span>+381 64 35 09 434</span>, ikona: <FontAwesomeIcon icon={faPhone} />},
+    {ime: 'Telefon', tekst: <span><a href="tel:0643509434">+381 64 35 09 434</a></span>, ikona: <FontAwesomeIcon icon={faPhone} />},
     {ime: 'Adresa', tekst: <span>Ivana Cankara 1<br />14000 Valjevo<br />Srbija</span>, ikona: <FontAwesomeIcon icon={faHome} />}
 ]
 
@@ -82,7 +82,8 @@ class Kontakt extends Component{
 		var tempParams = {
 			from_name: this.state.ime + '(' + this.state.email + ')',
 			to_name: 'Igore',
-			message_html: this.state.poruka
+			message_html: this.state.poruka,
+			reply_to: this.state.email
 		}
 		emailjs.send('default_service', 'template_8jpVPFI6', tempParams, 'user_SPkdW4TosAmrkXqkUij5r')
 			.then(function (res) {

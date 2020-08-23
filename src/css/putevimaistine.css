@@ -41,6 +41,9 @@ body {
 ol, ul {
 	list-style: none;
 }
+.carousel img {
+	width: 110%;
+}
 
 blockquote, q {
 	quotes: none;
@@ -92,7 +95,9 @@ input, select, textarea {
 		html, body {
 			min-width: 320px;
 		}
-
+		.carousel img {
+			width:110%!important;
+		}
 	}
 
 	html {
@@ -137,6 +142,7 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 14pt;
 			}
+			
 
 		}
 
@@ -1047,9 +1053,18 @@ input, select, textarea {
 			.galerija {
 				width: 50%!important;
 			}
+			.carousel img {
+				width: 150%!important;
+			}
 
 			.galerije h4 {
 				margin-top: -10px!important;
+			}
+			.ps {
+				width: 50%!important;
+			}
+			.ps img {
+				width: 70%!important;
 			}
 
 			.row {
@@ -4166,7 +4181,7 @@ input, select, textarea {
 	margin: 1px!important;
 }
 .tureinfo:hover {
-	background: black;
+	background: #8B7565;
 	cursor: pointer;
 }
 .procitajvise {
@@ -4232,6 +4247,10 @@ h3.psNaslov:first-child:after {
 	width: 80%;
 	box-shadow:5px 5px 10px rgba(0,0,0, 0.5);
 }
+.stranica.onama p {
+	text-indent: 10%;
+	text-align: justify;
+}
 .stranica p {font-weight: bold;}
 .stranicasdr {padding: 20px;}
 .stranicanaslov {
@@ -4288,10 +4307,9 @@ h3.psNaslov:first-child:after {
 .galerije a, .stranicasdr a {
 	border-bottom: 0px;
 }
-.galerije h4 {
-	color: #8B7565;
-	transform: rotate(-6deg);
-	margin-top: -70px;
+.galerije h5 {
+	color: white;
+	
 }
 .galerije h4:hover {
 	color: #BC9B72;
@@ -4299,6 +4317,13 @@ h3.psNaslov:first-child:after {
 .galerija { 
 	display: inline-block;
 	width: 25%;
+	vertical-align: top;
+	text-align: center;
+}
+.galerijav { 
+	display: inline-block;
+	width: 50%;
+	vertical-align: top;
 	text-align: center;
 }
 .galerija img {
@@ -4317,4 +4342,32 @@ h3.psNaslov:first-child:after {
 .stranicasdr .pi-planiraneture header.major {
 	position: relative!important;
 
+}
+.carousel-caption {
+	right: 0;
+	left: 0;
+}
+.carousel-caption a {
+	
+	font-weight: bold;
+	border-bottom: hidden!important;
+	cursor: pointer!important;
+}
+.carousel-caption a:hover {
+	
+	font-weight: bold;
+	border-bottom: hidden!important;
+	cursor: pointer!important;
+}
+.carousel-caption {
+	background-color: rgba(188,155,114, 0.8);
+	bottom: 0px!important;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 100%;
+	
+}
+
+a:hover {
+	text-decoration: none!important;
 }

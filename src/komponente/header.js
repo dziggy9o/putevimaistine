@@ -12,9 +12,10 @@ class Header extends Component {
             {naziv: 'Ciljevi', lokacija: '/ciljevi'},
             {naziv: 'Inicijative udruženja', lokacija: '/inicijativa'},
             {naziv: 'Putovanja za članove', lokacija: '/putovanja'},
-            {naziv: 'Zahvalnice', lokacija: '/zahvalnice'},
+            //{naziv: 'Zahvalnice', lokacija: '/zahvalnice'},
             {naziv: 'Galerija', lokacija: '/galerija'},
-            {naziv: 'Video', lokacija: '/video'}
+            {naziv: 'Video', lokacija: '/video'},
+            {naziv: 'Kontakt', lokacija: '/kontakt'},
 
         ]
         

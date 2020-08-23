@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 
 import { JerusalimJedan } from '../putovanja';
+import Link from 'react-router-dom';
 
 
 import InfoTure from './ptfunk';
@@ -8,7 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobeEurope, faAngleDoubleRight, faCalendarCheck } from '@fortawesome/free-solid-svg-icons';
 
 export const ture = [
-    {id: 1, naslov: 'Pokloničko putovanje u svetu zemlju', lokacija: 'Jerusalim', info: <JerusalimJedan />, datum: '23.01.2020.', slika: './vesti/jerusalim1.jpg', tekst: 'Saznaj više', link: '/jerusalim-23012020', sadrzaj: {datum: 'b', p1: 'c', p2: 'c3'} },
+    //{id: 1, naslov: 'Pokloničko putovanje u svetu zemlju', lokacija: 'Jerusalim', info: <JerusalimJedan />, datum: '23.01.2020.', slika: './vesti/jerusalim1.jpg', tekst: 'Saznaj više', link: '/jerusalim-23012020', sadrzaj: {datum: 'b', p1: 'c', p2: 'c3'} },
+    //{id: 1, naslov: 'Prijave za sledeće pokloničko putovanje', lokacija: 'Jerusalim', info: '', datum: '11.05.2020', slika: './vesti/jerusalim1.jpg', tekst: 'Saznaj više', link: '/putovanjemaj2020', sadrzaj: {datum: 'b', p1: 'c', p2: 'c3'} },
 ]
 
 class PlaniraneTure extends Component{
@@ -31,7 +33,7 @@ class PlaniraneTure extends Component{
                     
                 )
             })    
-        : <div>Trenutno nema tura</div> ;
+        : <div>Trenutno nema planiranih tura</div> ;
 
         return (
             <div className="pi-planiraneture"> 
